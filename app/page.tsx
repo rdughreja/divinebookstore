@@ -16,7 +16,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg p-8 mb-12">
         <div className="max-w-3xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in-up">Welcome to DivineBookstore</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in-up">Welcome to ModernBooks</h1>
           <p className="text-xl mb-6 animate-fade-in-up animation-delay-200">Discover your next favorite book or find the perfect stationery for your needs.</p>
           <Button asChild className="animate-fade-in-up animation-delay-400">
             <Link href="/books">Explore Books</Link>

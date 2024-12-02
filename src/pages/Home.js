@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 
 // Mock data for featured books
 const featuredBooks = [
-  { id: 1, title: 'The Great Gatsby', author: 'F. Scott Fitzgerald', price: 12.99, image: '/placeholder.svg' },
-  { id: 2, title: 'To Kill a Mockingbird', author: 'Harper Lee', price: 14.99, image: '/placeholder.svg' },
-  { id: 3, title: '1984', author: 'George Orwell', price: 11.99, image: '/placeholder.svg' },
-  { id: 4, title: 'Pride and Prejudice', author: 'Jane Austen', price: 9.99, image: '/placeholder.svg' },
+  { id: 1, title: 'The Great Gatsby', author: 'F. Scott Fitzgerald', price: 1299, image: '/placeholder.svg' },
+  { id: 2, title: 'To Kill a Mockingbird', author: 'Harper Lee', price: 1499, image: '/placeholder.svg' },
+  { id: 3, title: '1984', author: 'George Orwell', price: 1199, image: '/placeholder.svg' },
+  { id: 4, title: 'Pride and Prejudice', author: 'Jane Austen', price: 999, image: '/placeholder.svg' },
 ];
 
 function Home() {
@@ -15,7 +15,7 @@ function Home() {
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg p-8 mb-12">
         <div className="max-w-3xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Welcome to DivineBookstore</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Welcome to ModernBooks</h1>
           <p className="text-xl mb-6">Discover your next favorite book or find the perfect stationery for your needs.</p>
           <Link to="/books" className="bg-white text-blue-600 px-6 py-2 rounded-full font-semibold hover:bg-blue-100 transition-colors">
             Explore Books
@@ -34,7 +34,7 @@ function Home() {
                 <h3 className="font-semibold text-lg mb-2">{book.title}</h3>
                 <p className="text-gray-600 mb-2">{book.author}</p>
                 <div className="flex justify-between items-center">
-                  <span className="font-bold">${book.price.toFixed(2)}</span>
+                  <span className="font-bold">rs.{book.price.toFixed(2)}</span>
                   <Link to={`/books/${book.id}`} className="text-blue-600 hover:text-blue-800 transition-colors">
                     View Details
                   </Link>
